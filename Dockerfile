@@ -7,7 +7,7 @@
 # docker build -t bcl2fastq:2.19.0.316 -t bcl2fastq:2.19 -t bcl2fastq:latest .
 #
 # Run in container as root:
-# docker run -it -v $(pwd):/output -v /data/illumina/my_run/:/run bcl2fastq  /usr/local/bin/bcl2fastq -o /output -R /run
+# docker run -it -v $(pwd):/output -v /data/illumina/my_run/:/run bcl2fastq:latest /usr/local/bin/bcl2fastq -o /output -R /run
 #
 # Notes:
 # 1. Can run in container as specific user with "--user `id -n -u`:`id -n -g`"
